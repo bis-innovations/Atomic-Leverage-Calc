@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .node-card {
+    @apply bg-white shadow-lg rounded-2xl p-4 border-2 border-gray-200 hover:border-defi-blue transition-all duration-200;
+  }
+  
+  .tooltip {
+    @apply absolute hidden group-hover:block bg-gray-800 text-white text-xs p-2 rounded-xl w-56 z-50;
+  }
+  
+  .preset-item {
+    @apply relative p-3 cursor-pointer hover:bg-gray-100 rounded-lg transition-colors duration-200;
+  }
+} 
